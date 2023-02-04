@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>이미지 갤러리 수동</title>
+  </head>
+  <body>
+    <div class="fullimg" id="fullimg_box">
+      <img src="images/img1.jpg" id="img_full" />
+      <span onclick="CloseFullImg()">X</span>
+    </div>
+    <div class="image_gallery">
+      <img src="images/img1.jpg" alt="" onclick="OpenFullImag(this.src)" />
+      <img src="images/img2.jpg" alt="" onclick="OpenFullImag(this.src)" />
+      <img src="images/img3.jpg" alt="" onclick="OpenFullImag(this.src)" />
+      <img src="images/img4.jpg" alt="" onclick="OpenFullImag(this.src)" />
+      <img src="images/img5.jpg" alt="" onclick="OpenFullImag(this.src)" />
+      <img src="images/img6.jpg" alt="" onclick="OpenFullImag(this.src)" />
+      <img src="images/img7.jpg" alt="" onclick="OpenFullImag(this.src)" />
+      <img src="images/img8.jpg" alt="" onclick="OpenFullImag(this.src)" />
+    </div>
+
+    <script>
+      let fullimg_box = document.getElementById("fullimg_box");
+      let img_full = document.getElementById("img_full");
+
+      function OpenFullImag(pic) {
+        fullimg_box.style.display = "flex";
+        img_full.src = pic;
+      }
+
+      function CloseFullImg() {
+        fullimg_box.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
