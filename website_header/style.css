@@ -1,0 +1,175 @@
+﻿*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.container{
+
+    width: 100%;
+    height: 100vh;   
+
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/background.png);
+    background-size: cover;
+    background-position: center;
+
+    padding: 0 8%;
+}
+
+.navbar{
+
+    display: flex;
+    height: 12%;
+    align-items: center;
+    
+    /* border: 1px solid red; */
+}
+
+.navbar nav {
+
+    flex:1;
+    text-align: right;
+}
+
+.navbar .logo{
+
+    width:50px;
+}
+
+.navbar nav ul li{
+
+    list-style: none;
+    display: inline-block;   
+    
+
+}
+
+.navbar nav ul li a{
+
+    color:#fff;
+    text-decoration: none;
+
+    padding: 10px 30px;
+    display: block;
+}
+
+.navbar nav ul li a:hover{
+
+    background-color: rgb(233, 167, 85);
+}
+
+.navbar .menu-list{
+
+    width:30px;
+    margin-left: 30px;;
+}
+
+.row{
+
+    display: flex;
+    height: 88%;
+    align-items: center;
+    
+
+}
+
+.col {
+    flex-basis: 50%;    
+    
+}
+
+.col h1{
+    
+    font-size: 50px;
+    color:#fff;
+    
+    
+}
+.col p{
+
+    font-size: 11px;
+    color:#fff;
+    line-height: 15px;
+}
+.col button {
+
+    width:180px;
+    color:#000;
+    font-size: 12px;
+    padding: 12px 0;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;   
+    
+    font-weight: 700;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.5);
+
+    cursor: pointer;
+
+}
+
+.col button:hover{
+    background: transparent;
+    border:1px solid #000;
+    color: #fff;
+}
+
+
+
+.card {
+
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin:10px 15px;        
+    /* background-image: url(images/pic-1.png); */
+    background-position: center;
+    background-size:cover;   
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+.col .card1 {    
+    background-image: url(images/pic-1.png);  
+   
+}
+.col .card2 {   
+    
+    background-image: url(images/pic-2.png);
+  
+} 
+.col .card3{
+     
+    background-image: url(images/pic-3.png);   
+  
+}
+.col .card4{  
+    
+    background-image: url(images/pic-4.png);
+  
+}
+
+.card h5 {
+
+    color:#fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    font-size: 8px;
+    text-shadow: 0 0 15px #000;
+
+}
