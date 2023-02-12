@@ -173,3 +173,21 @@
     text-shadow: 0 0 15px #000;
 
 }
+
+@media screen and (max-width: 768px) {
+	.row {
+        display: block;
+        text-align: center;
+        margin-top: 20%;
+
+    }
+    .navbar nav{
+        visibility: hidden;
+    }
+
+    .col h1{
+        font-size: 50px;
+    }
+
+   
+}
